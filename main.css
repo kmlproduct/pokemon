@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #141414;
+    color: #fff;
+    font-family: Poppins,sans-serif;
+}
+.container {
+margin: 0 auto;
+max-width: 1240px;
+padding: 60px 120px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+
+}
+.header img {
+    width: 58px;
+}
+.header input {
+    background: hsla(0,0%,100%,.05);
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 15px;
+    outline: none;
+    padding: 16px 24px;
+    width: 100%;
+    margin-left: 20px;
+}
+.container .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.container .row .pokemon-card-graper {
+    /* margin: 10px; */
+
+    
+}
+.container .row .pokemon-card-graper .pokemon-card{
+    background-color: hsla(0,0%,100%,.05);
+    border-radius: 12px;
+    padding: 24px;
+    position: relative;
+    text-align: center;
+    width: 224px;
+}
+.container .row .pokemon-card-graper .pokemon-card li{
+    margin: 10px;
+}
+.container .row .pokemon-card-graper .pokemon-card img{
+    width: 100px;
+}
+.container .row .pokemon-card-graper .pokemon-card-number{
+    background-color: #91d88e;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    height: 16px;
+    right: 16px;
+    top: 22px;
+    width: 28px;
+
+}
+
+.container .row .pokemon-card-graper .pokemon-card-number::before{
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+    border-bottom: 8px solid #91d88e;
+    top: -8px;
+}
+.container .row .pokemon-card-graper .pokemon-card-number::after{
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+    border-top: 8px solid #91d88e;
+    bottom: -8px;
+}
