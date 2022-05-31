@@ -6,7 +6,11 @@ window.onload = () => {
             const list = document.getElementById('pokemon-card')
 
             imgs.forEach((pokemon, index) => {
-                list.innerHTML += `<li> <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${index + 1}.png" alt="" /> ${pokemon.name}</li>`
+                list.innerHTML += `<li> <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${index + 1}.png" alt="" />
+                 ${pokemon.name}
+                
+                <span class="pokemon-card-number">${index + 1}</span></li>`
+
             })
         })
 }
